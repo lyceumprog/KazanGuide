@@ -30,9 +30,9 @@ namespace KazanGuide
 			};
 
 			ListView listView1 = FindViewById<ListView> (Resource.Id.listView1);
-			List<SightSeeing> sightSeeingList = new List<SightSeeing> ();
+			List<SightSeeing> sightSeeingList = new List<SightSeeing> (); // Создание списка для передачи его через адаптер на список на интерфейсе
 
-
+			// Пример создания новых элементов достопримечательностей
 			sightSeeingList.Add(new SightSeeing("Кремль","",0,0,"Казань, Россия, 420014","",Resource.Drawable.p1));
 			sightSeeingList.Add(new SightSeeing("Мечеть Марджани","",0,0,"улица Каюма Насыри, 17, Казань, Россия","",Resource.Drawable.p2));
 			sightSeeingList.Add(new SightSeeing("Мечеть Нурулла","",0,0,"Московская ул., 74, Казань, Респ. Татарстан, Россия, 420021","",Resource.Drawable.p3));
@@ -42,6 +42,7 @@ namespace KazanGuide
 			sightSeeingList.Add(new SightSeeing("Центральный стадион","",0,0,"ул. Староаракчинская, 4, Казань, Россия","",Resource.Drawable.p7));
 			sightSeeingList.Add(new SightSeeing("Черное озеро","",0,0,"ул. Староаракчинская, 4, Казань, Россия","",Resource.Drawable.p8));
 
+			// Передача через кастомный адаптер получившегося списка
 			listView1.Adapter = new SightListItemAdapter (this, sightSeeingList);
 
 		}

@@ -10,7 +10,7 @@ namespace KazanGuide
 		public double longitude;
 		public string adress;
 		public string audioFileName;
-		public int imageId;
+		public int imageId; // Здесь используется внутренняя нумерация всех изображений. Как использовать - показано в файле main.cs
 
 		public SightSeeing (string sightName, string shortText, double latitude, double longitude, string adress, string audioFileName, int imageId)
 		{
