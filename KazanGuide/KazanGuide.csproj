@@ -14,7 +14,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>KazanGuide</AssemblyName>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -47,6 +47,8 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupportFile\SightListItemAdapter.cs" />
+    <Compile Include="SupportFile\SightSeeing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -61,6 +63,19 @@
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\SightSeeingListItem.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\p1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p2.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p3.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p4.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p5.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p6.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p7.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p8.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\p9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="SupportFile\" />
+  </ItemGroup>
 </Project>
